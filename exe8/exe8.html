@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+    
+        <label for="salaire">salaire</label>
+            <input type="Nunber" id="salaire"><br>
+            <input type="radio" id="femme" name="sex">
+            <label for="femme">femme </label>
+            <input type="radio" id="homme" name="sex">
+            <label for="homme">homme </label><br>
+            <input type="radio" id="bonus" name="prime">
+            <label for="bonus">bonus </label>
+            <input type="radio" id="allocation" name="prime">
+            <label for="allocation">allocation</label><br>
+            <h4>les personnes à charge</h4>
+            <input type="radio" id="trois" name="charge">
+            <label for="trois">trois</label><br>
+            <input type="radio" id="quatre" name="charge">
+            <label for="quatre">quatre </label><br>
+
+            <input type="button" onClick="calsalaire()" value="calculer"/>
+        </form>
+        <p>la salaire est: <br>
+            <span id = "salr"></span>
+            </p>
+            
+    <script src="exe8.js"></script>
+</body>
+</html>

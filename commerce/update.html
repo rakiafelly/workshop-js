@@ -13,15 +13,15 @@
 
     <title>Document</title>
 </head>
-<body>
+<body onload ="show()">
 
     <style>
         .primarytext {
             color: blue;
         }
     </style>
-    <h3 class="primarytext text-center"> ajout des produits</h3>
-    <form action="cosmetic.html" id="myform">
+    <h3 class="primarytext text-center"> Modifier un produit</h3>
+    <form action="admin.html" id="myform" onsubmit="update()" >
         <div class="row mt-3 mx-5">
             <label for="name" class="form-label">nom de produit :</label>
             <input id="name" type="text" placeholder="Saisissez votre nom ici" class="form-control">
@@ -32,12 +32,11 @@
             <input type="hidden" id="save" />
         </div>
         <div class="row mt-3 mx-5">
-            <button type="submit" class="btn btn-success" id="envoi"  >Envoyer</button>
+            <button type="submit" class="btn btn-success" id="envoi"  >Modifier</button>
         </div>
-       
     </form>
 
-    <script src="js/commerce.js"></script>
+    <script src="js/update.js"></script>
 
 </body>
 

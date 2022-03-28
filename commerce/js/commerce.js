@@ -15,5 +15,4 @@ function add() {
   prix.value = "";
   localStorage.setItem("commerce", JSON.stringify(commerce));
 window.location.href='cosmetic.html'
-
 }

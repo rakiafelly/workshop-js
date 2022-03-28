@@ -20,24 +20,30 @@
             color: blue;
         }
     </style>
-    <h3 class="primarytext text-center"> Page d'authentification</h3>
-    <form action="commerce.html" id="myform" onsubmit="return validate()">
-        <div class="row mt-3 mx-5">
-            <label for="mail" class="form-label">E-mail :</label>
-            <input id="mail" type="text" placeholder="Saisissez votre nom ici" class="form-control">
-            <div class="invalid-feedback">le champ est obligatoire</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" offset-3 col-6">
+                <h3 class="primarytext text-center"> Page d'authentification</h3>
+                <form action="commerce.html" id="myform" onsubmit="return validate()">
+                    <div class="row mt-3 mx-5">
+                        <label for="mail" class="form-label">E-mail :</label>
+                        <input id="mail" type="text" placeholder="Saisissez votre nom ici" class="form-control">
+                        <div class="invalid-feedback">le champ est obligatoire</div>
 
+                    </div>
+                    <div class="row mt-3 mx-5">
+                        <label for="pw" class="form-label">mot de passe :</label>
+                        <input type="password" id="pw" placeholder="Saisissez votre nom ici" class="form-control">
+                        <div class="invalid-feedback">le champ est obligatoire</div>
+                    </div>
+                    <div class="row mt-3 mx-5">
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                    </div>
+                    <h6 class="text-center"><a href="registre.html" type="submit"> s'inscrire</a></h6>
+                </form>
+             </div>
         </div>
-        <div class="row mt-3 mx-5">
-            <label for="pw" class="form-label">mot de passe :</label>
-            <input type="password" id="pw"placeholder="Saisissez votre nom ici" class="form-control">
-            <div class="invalid-feedback">le champ est obligatoire</div>
-        </div>
-        <div class="row mt-3 mx-5">
-            <button type="submit" class="btn btn-success">Envoyer</button>
-        </div>
-        <h6 class="text-center"><a href="" type="submit" > s'inscrire</a></h6>
-    </form>
+    </div>
 
     <script src="login.js"></script>
 

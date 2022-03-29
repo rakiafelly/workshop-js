@@ -7,12 +7,13 @@ const categorie = document.getElementById("categorie");
 const image = document.getElementById("image");
 
 var commerce = JSON.parse(localStorage.getItem("commerce") || "[]");
-
 envoiButton.addEventListener("click", add)
-function add() {
+  async function add(e) {
+  e.preventDefault();
+  const base64= await getBase64(image.files[0])
   const product={
     description:description.value,
-    image:image.value,
+    image:base64,
     categorie:categorie.value,
     name:nom.value,
     price:prix.value,
@@ -33,6 +34,14 @@ function showcategorie(){
     listecategorie+=`<option value="${element.id}">${element.name1}</option> ` 
   });
   document.getElementById("categorie").innerHTML=listecategorie;
-
-
+}
+  function getBase64(img){
+  return new Promise((resolve,reject)=>{ 
+    var reader = new FileReader();
+    reader.onload = function() {
+      resolve(reader.result);
+    }
+    reader.readAsDataURL(img);
+  })
+ 
 }

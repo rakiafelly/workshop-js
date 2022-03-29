@@ -5,7 +5,7 @@ function display() {
   commerce.forEach((x, ind) => {
     htmlCode += `<div class="card col-3 ">
         <div class="card-body">
-        <img src="https://www.generationsforpeace.org/wp-content/uploads/2018/07/empty.jpg" class="img-fluid" alt="...">
+        <img src="${x.image}" class="img-fluid" alt="...">
           <h5 class="card-title">${x.name}</h5>
           <p class="card-text">${x.price} DTN</p>
           <button class="btn btn-info text-white " onclick="gotoupdate(${ind})">Modifier</button>

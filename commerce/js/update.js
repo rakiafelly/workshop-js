@@ -11,4 +11,4 @@
      commerce[index].name= document.getElementById("name").value;
      commerce[index].price= document.getElementById("prix").value;
      localStorage.setItem("commerce", JSON.stringify(commerce));
- }
+<WA>

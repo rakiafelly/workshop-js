@@ -7,6 +7,7 @@ var categorie = JSON.parse(localStorage.getItem("categorie") || "[]");
 envoibtn.addEventListener("click", add)
 function add() {
   const category={
+    id:categorie.length,
     name1:name1.value,
     description:description.value,
   }

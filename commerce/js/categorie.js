@@ -6,16 +6,32 @@ const image = document.getElementById("image");
 var categorie = JSON.parse(localStorage.getItem("categorie") || "[]");
 
 envoibtn.addEventListener("click", add)
-function add() {
+ async function add(e) {
+  e.preventDefault();
+  const base64= await getBase64(image.files[0])
   const category={
     id:categorie.length,
     name1:name1.value,
     description:description.value,
+    image:base64,
   }
   categorie.push(category);
   name1.value = "";
   description.value = "";
+  image.value="",
+
   localStorage.setItem("categorie", JSON.stringify(categorie));
-// window.location.href='cosmetic1.html'
+ window.location.href='cosmetic1.html'
 
 }
+function getBase64(img){
+  return new Promise((resolve,reject)=>{ 
+    var reader = new FileReader();
+    reader.onload = function() {
+      resolve(reader.result);
+    }
+    reader.readAsDataURL(img);
+  })
+ 
+}
+

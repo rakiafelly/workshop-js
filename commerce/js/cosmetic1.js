@@ -4,7 +4,7 @@
      categorie.forEach((x,ind) => {
       htmlCode += `  
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="${x.image}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Categorie:</h5>
         <p class="card-text">${x.name1}</p>

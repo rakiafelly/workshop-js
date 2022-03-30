@@ -25,7 +25,7 @@ envoiButton.addEventListener("click", add)
   categorie.value="";
   image.value="";
   localStorage.setItem("commerce", JSON.stringify(commerce));
-//window.location.href='cosmetic.html'
+window.location.href='admin.html'
 }
 function showcategorie(){
   var listecategorie="";

@@ -3,7 +3,7 @@ function display() {
   var commerce = JSON.parse(localStorage.getItem("commerce") || "[]");
 
   commerce.forEach((x, ind) => {
-    htmlCode += ` <div class="row"> <div class="card col-3">
+    htmlCode += ` <div class="col-4"> <div class="card">
         <div class="card-body">
         <img src="${x.image}" class="img-fluid" alt="...">
           <h5 class="card-title">${x.name}</h5>

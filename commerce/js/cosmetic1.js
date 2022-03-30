@@ -29,6 +29,6 @@
     
     function gotoupdate(ind){
       localStorage.setItem("index", JSON.stringify(ind));
-      window.location.href="modify.html"
+      window.location.href="modifycategorie.html"
     }
     
